@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.hiro.outputActivity">
+
+    <TextView
+        android:id="@+id/title_outputumum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="SISTEM ANTRIAN PASIEN PADA RUMAH SAKIT
+XXX"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/garis_atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_outputumum"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="--------------------------------------------------------------------------"/>
+
+
+    <TextView
+        android:id="@+id/title_nomeran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/garis_atas"
+        android:gravity="center"
+        android:text="Nomer Antrian Anda :"/>
+
+    <TextView
+        android:id="@+id/nomer_antrian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_nomeran"
+        android:text="0"
+        android:textSize="100sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tipe_antrian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomer_antrian"
+        android:text="BPJS"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:layout_below="@+id/tipe_antrian"
+        android:id="@+id/garis_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="--------------------------------------------------------------------------"/>
+
+
+    <TextView
+        android:id="@+id/output_pasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/garis_bawah"
+        android:layout_marginLeft="16dp"
+        android:text="Nama Pasien : "/>
+
+
+    <TextView
+        android:id="@+id/tvoutput_pasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/garis_bawah"
+        android:layout_toEndOf="@+id/output_notlp"
+        android:layout_toRightOf="@+id/output_notlp"
+        android:text="Ricky Ariansyah" />
+
+    <TextView
+        android:id="@+id/output_umur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/output_pasien"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Umur : "/>
+
+
+    <TextView
+        android:id="@+id/tvoutput_umur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvoutput_pasien"
+        android:layout_toRightOf="@+id/output_umur"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="21 Tahun"/>
+
+    <TextView
+        android:id="@+id/output_notlp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/output_umur"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Nomor Telepon : "
+        />
+
+    <TextView
+        android:id="@+id/tvoutput_notlp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvoutput_umur"
+        android:layout_toRightOf="@+id/output_notlp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="082310569056"/>
+
+    <TextView
+        android:id="@+id/output_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/output_notlp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Alamat : "
+        />
+
+    <TextView
+        android:id="@+id/tvoutput_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvoutput_notlp"
+        android:layout_toRightOf="@+id/output_alamat"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Sepanjang Jalan kenangan kita terus bergandeng tangan"/>
+
+    <TextView
+        android:id="@+id/output_keluhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvoutput_alamat"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="16dp"
+        android:text="Keluhan : "/>
+
+    <TextView
+        android:id="@+id/tvoutput_keluhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvoutput_alamat"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/output_keluhan"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:text="Sakit Tapi tidak berdarah"/>
+
+</RelativeLayout>

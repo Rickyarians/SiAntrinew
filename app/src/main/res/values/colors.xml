@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btn_bpjs">#4CAF50</color>
+    <color name="btn_umum">#2196F3</color>
+    <color name="btn_submit">#8FC050</color>
+    <color name="btn_cancel">#F44336</color>
+    <color name="white">#FFFFFF</color>
+    <color name="btn_tambah">#4CAF50</color>
+    <color name="btn_batal">#F44336</color>
+</resources>

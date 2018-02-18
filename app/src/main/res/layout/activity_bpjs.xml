@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin_vertical"
+    android:paddingLeft="@dimen/margin_horizontal"
+    android:paddingRight="@dimen/margin_horizontal"
+    android:paddingTop="@dimen/margin_vertical"
+    tools:context="com.example.android.hiro.bpjsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_margin="15dp"
+                android:id="@+id/title_bpjs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="DAFTAR PASIEN BPJS"
+                android:textSize="25dp"
+                android:textColor="@color/btn_bpjs"
+                android:textStyle="bold|italic"
+                />
+
+            <TextView
+                android:id="@+id/tv_namabpjs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_bpjs"
+                android:layout_marginTop="10dp"
+                android:text="Nama Pasien" />
+
+            <EditText
+                android:id="@+id/et_namabpjs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_namabpjs"
+                android:lines="1"
+                android:maxLength="30"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tv_umurbpjs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_namabpjs"
+                android:layout_marginTop="10dp"
+                android:text="Umur" />
+
+            <EditText
+                android:id="@+id/et_umurbpjs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_umurbpjs"
+                android:inputType="number"
+                android:maxLength="4" />
+
+
+            <TextView
+                android:id="@+id/tv_nomorbpjs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_umurbpjs"
+                android:layout_marginTop="10dp"
+                android:text="Nomor Telepon" />
+
+            <EditText
+                android:id="@+id/et_nomorbpjs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nomorbpjs"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tv_alamatbpjs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_nomorbpjs"
+                android:layout_marginTop="10dp"
+                android:text="Alamat" />
+
+            <EditText
+                android:id="@+id/et_alamatbpjs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_alamatbpjs"
+                android:inputType="text"
+                android:maxLength="300" />
+
+            <TextView
+                android:id="@+id/tv_keluhanbpjs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_alamatbpjs"
+                android:layout_marginTop="10dp"
+                android:text="Keluhan" />
+
+            <EditText
+                android:id="@+id/et_keluhanbpjs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_keluhanbpjs"
+                android:inputType="text"
+                android:maxLength="300" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_keluhanbpjs"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_daftarbpjs"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/btn_tambah"
+                    android:text="DAFTAR"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_batalbpjs"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/btn_batal"
+                    android:text="Batal"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

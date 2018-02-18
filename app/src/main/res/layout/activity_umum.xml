@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin_vertical"
+    android:paddingLeft="@dimen/margin_horizontal"
+    android:paddingRight="@dimen/margin_horizontal"
+    android:paddingTop="@dimen/margin_vertical"
+    tools:context="com.example.android.hiro.UmumActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_margin="15dp"
+                android:id="@+id/title_umum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="DAFTAR PASIEN UMUM"
+                android:textSize="25dp"
+                android:textColor="@color/btn_umum"
+                android:textStyle="bold|italic"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tvnama_umum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_umum"
+                android:layout_marginTop="10dp"
+                android:text="Nama Pasien" />
+
+            <EditText
+                android:id="@+id/etnama_umum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvnama_umum"
+                android:lines="1"
+                android:maxLength="30"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tvumur_umum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etnama_umum"
+                android:layout_marginTop="10dp"
+                android:text="Umur" />
+
+            <EditText
+                android:id="@+id/etumur_umum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvumur_umum"
+                android:inputType="number"
+                android:maxLength="4" />
+
+
+            <TextView
+                android:id="@+id/tvnomor_umum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etumur_umum"
+                android:layout_marginTop="10dp"
+                android:text="Nomor Telepon" />
+
+            <EditText
+                android:id="@+id/etnomor_umum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvnomor_umum"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1" />
+
+
+            <TextView
+                android:id="@+id/tvalamat_umum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etnomor_umum"
+                android:layout_marginTop="10dp"
+                android:text="Alamat" />
+
+            <EditText
+                android:id="@+id/etalamat_umum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvalamat_umum"
+                android:inputType="text"
+                android:maxLength="300" />
+
+            <TextView
+                android:id="@+id/tvkeluhan_umum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etalamat_umum"
+                android:layout_marginTop="10dp"
+                android:text="Keluhan" />
+
+            <EditText
+                android:id="@+id/etkeluhan_umum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvkeluhan_umum"
+                android:inputType="text"
+                android:maxLength="300" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etkeluhan_umum"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_daftarumum"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/btn_tambah"
+                    android:text="DAFTAR"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_batalumum"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/btn_batal"
+                    android:text="Batal"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
